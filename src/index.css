@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 248 9% 98%;
+    --foreground: 31 41% 18%;
+    --card: 243 44% 96%;
+    --card-foreground: 31 41% 18%;
+    --popover: 243 44% 96%;
+    --popover-foreground: 31 41% 18%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 31 41% 18%;
+    --secondary: 74 85% 55%;
+    --secondary-foreground: 31 41% 18%;
+    --muted: 229 16% 91%;
+    --muted-foreground: 31 20% 40%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 31 41% 18%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 248 9% 98%;
+    --border: 229 16% 91%;
+    --input: 229 16% 91%;
+    --ring: 180 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 15 23% 16%;
+    --foreground: 241 90% 97%;
+    --card: 15 23% 22%;
+    --card-foreground: 241 90% 97%;
+    --popover: 15 23% 22%;
+    --popover-foreground: 241 90% 97%;
+    --primary: 180 100% 50%;
+    --primary-foreground: 15 23% 16%;
+    --secondary: 74 85% 55%;
+    --secondary-foreground: 15 23% 16%;
+    --muted: 15 23% 28%;
+    --muted-foreground: 241 20% 70%;
+    --accent: 180 100% 50%;
+    --accent-foreground: 15 23% 16%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 241 90% 97%;
+    --border: 15 23% 28%;
+    --input: 15 23% 28%;
+    --ring: 180 100% 50%;
+  }
+
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    overflow-x: clip;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  /* CV Specific Styles */
+  .cv-container {
+    @apply max-w-[210mm] mx-auto bg-card text-foreground shadow-lg rounded-sm overflow-hidden;
+    min-height: 297mm; /* A4 height */
+  }
+  
+  .cv-header {
+    @apply border-b-2 border-primary/20 pb-6 mb-6;
+  }
+  
+  .cv-section {
+    @apply mb-8;
+  }
+  
+  .cv-section-title {
+    @apply text-xl font-bold text-primary uppercase tracking-wider mb-4 pb-2 border-b border-border;
+  }
+  
+  .cv-entry {
+    @apply mb-5 last:mb-0;
+  }
+  
+  .cv-entry-header {
+    @apply flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1;
+  }
+  
+  .cv-entry-meta {
+    @apply text-sm text-muted-foreground font-medium;
+  }
+  
+  .cv-entry-description {
+    @apply text-sm leading-relaxed text-foreground/90 mt-2;
+  }
+  
+  .cv-skills-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+  }
+  
+  .cv-skill-category {
+    @apply mb-3;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-fadeIn { animation: fadeIn 0.6s ease-out; }
+.animate-slideUp { animation: slideUp 0.8s ease-out; }
+.animate-slideDown { animation: slideDown 0.6s ease-out; }
+.animate-scaleIn { animation: scaleIn 0.5s ease-out; }
+.animate-float { animation: float 3s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.03;
+  z-index: 100;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
