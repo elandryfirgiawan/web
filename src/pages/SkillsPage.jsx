@@ -86,7 +86,7 @@ const SkillsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Skills - DevPortfolio</title>
+        <title>Skills - Elandry Firgiawan</title>
         <meta name="description" content="Comprehensive overview of my technical skills including frontend development, backend technologies, databases, DevOps tools, and IT support expertise." />
       </Helmet>
 

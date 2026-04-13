@@ -9,7 +9,7 @@ export const cvData = {
     github: "https://github.com/elandryfirgiawan/",
     linkedin: "https://linkedin.com/in/elandry-firgiawan/"
   },
-  summary: "Versatile and results-driven Full Stack Developer with over 5 years of experience in building scalable web applications and providing comprehensive IT support. Adept at bridging the gap between complex technical requirements and user-friendly solutions. Proven track record of reducing system downtime and delivering high-performance software on time.",
+  summary: "Versatile and results-driven Full Stack Developer with over 1 years of experience in building scalable web applications and providing comprehensive IT support. Adept at bridging the gap between complex technical requirements and user-friendly solutions. Proven track record of reducing system downtime and delivering high-performance software on time.",
   experience: [
     {
       company: "Huabao Indonesia PT.Bousuo Taman Indusrial investment Group",

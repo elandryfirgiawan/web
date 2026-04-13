@@ -71,7 +71,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Projects - DevPortfolio</title>
+        <title>Projects - Elandry Firgiawan</title>
         <meta name="description" content="Explore my portfolio of web development projects including full stack applications, frontend interfaces, backend systems, and IT support solutions." />
       </Helmet>
 
