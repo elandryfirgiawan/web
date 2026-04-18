@@ -7,7 +7,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import { motion } from 'framer-motion';
-import fotoCV from "../assets/image/fotocv.svg";
+import fotoCV from "../assets/image/fotocv.jpeg";
 
 const AboutPage = () => {
   const timeline = [
