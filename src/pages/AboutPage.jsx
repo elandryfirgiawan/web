@@ -7,6 +7,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import { motion } from 'framer-motion';
+import fotoCV from "../assets/image/fotocv.jpeg";
 
 const AboutPage = () => {
   const timeline = [
@@ -80,7 +81,7 @@ const AboutPage = () => {
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 mb-12 md:mb-16">
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground">
-                    <img className="w-full h-full object-cover rounded-2xl" src="./src/assets/image/fotocv.jpeg" alt="Profile" />
+                    <img className="w-full h-full object-cover rounded-2xl" src={fotoCV} alt="Profile" />
                   </div>
                 </div>
                 <div className="flex-1 text-center md:text-left">

@@ -4,6 +4,7 @@ import { Menu, Moon, Sun } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/context/ThemeContext.jsx';
+import logoEl from "../assets/image/logoelicon.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +42,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-bold text-lg text-primary-foreground transition-transform duration-200 group-hover:scale-110">
-              <img className="w-full h-full object-cover rounded-xl" src="./src/assets/image/logoelicon.png" alt="Profile" />
+              <img className="w-full h-full object-cover rounded-xl" src={logoEl} alt="profile" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Elandry Firigawan

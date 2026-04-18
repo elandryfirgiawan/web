@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import logoEl from "../assets/image/logoelicon.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center font-bold text-lg text-primary-foreground">
-                <img className="w-full h-full object-cover rounded-xl" src="./src/assets/image/logoelicon.png" alt="Profile" />
+                <img className="w-full h-full object-cover rounded-xl" src={logoEl} alt="Profile" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Elandry Firigiawan
