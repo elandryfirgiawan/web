@@ -70,7 +70,7 @@ const HomePage = () => {
                 <span className="gradient-text">& IT Support Specialist</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-                Building modern web applications and providing comprehensive IT solutions with 1+ years of experience in development and technical support.
+                Building modern web applications and providing comprehensive IT solutions with 1 years of experience in development and technical support.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
                 <Link to="/projects" className="w-full sm:w-auto">
