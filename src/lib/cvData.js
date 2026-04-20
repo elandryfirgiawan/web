@@ -1,7 +1,7 @@
 export const cvData = {
   personalInfo: {
     name: "Elandry Firgiawan",
-    title: "Full Stack Web Developer & IT Support Specialist",
+    title: "Full Stack Web Developer & IT Support",
     email: "elandryfirgiawan@gmail.com",
     phone: "+62 822 3694 5632",
     location: "Morowali, Indonesia",
@@ -9,16 +9,17 @@ export const cvData = {
     github: "https://github.com/elandryfirgiawan/",
     linkedin: "https://linkedin.com/in/elandry-firgiawan/"
   },
-  summary: "Versatile and results-driven Full Stack Developer with over 1 years of experience in building scalable web applications and providing comprehensive IT support. Adept at bridging the gap between complex technical requirements and user-friendly solutions. Proven track record of reducing system downtime and delivering high-performance software on time.",
+  summary: "Bachelor of Mathematics graduate with strong analytical and problem-solving skills, experienced as a Full-Stack Web Developer and IT Support. Skilled in Laravel, Vue.js, Django, and MySQL, with proven experience in developing web applications from concept to deployment. Passionate about building scalable systems and eager to grow in fields such as Software Engineering, Cybersecurity, and AI Development.",
   experience: [
     {
       company: "Huabao Indonesia PT.Bousuo Taman Indusrial investment Group",
       position: "Full Stack Developer & IT Support",
       duration: "2025 - Present",
       description: [
-        "Lead the development of enterprise-level web applications using React, Node.js, and PostgreSQL.",
-        "Architected a microservices backend that improved system scalability and reduced API response times by 35%.",
-        "Mentored a team of 4 junior developers, implementing code review standards and CI/CD best practices."
+        "Designed  HRIS database schema for BPJS services, supporting workforce data management for 8,000+ employees.",
+        "Developed employee data models including tenant, department, division, BPJS status, and dependent classification.",
+        "Built backend systems for Internship Portal and Legal Case Management using Laravel, Filament, Vue.js, and MySQL.",
+        ""
       ]
     },
     {

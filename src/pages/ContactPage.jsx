@@ -234,8 +234,8 @@ const ContactPage = () => {
                       I'm currently available for freelance projects and consulting work. Typical response time is within 24 hours.
                     </p>
                     <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 rounded-full bg-secondary animate-pulse-glow"></div>
-                      <span className="text-xs md:text-sm font-medium text-secondary">Available for new projects</span>
+                      <div className="w-3 h-3 rounded-full bg-foreground animate-pulse-glow"></div>
+                      <span className="text-xs md:text-sm font-medium text-foreground">Available for new projects</span>
                     </div>
                   </CardContent>
                 </Card>

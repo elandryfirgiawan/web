@@ -166,7 +166,7 @@ const HomePage = () => {
                       </p>
                       <div className="flex flex-wrap gap-2 mt-auto">
                         {project.tags.map((tag, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs bg-muted text-muted-foreground">
+                          <Badge key={idx} variant="secondary" className="text-xs bg-muted hover:bg-transparent hover:text-primary">
                             {tag}
                           </Badge>
                         ))}

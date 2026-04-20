@@ -85,7 +85,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <Badge className="mb-4 bg-primary/10 text-primary border-primary/20">
+                  <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
                     Full Stack Developer
                   </Badge>
                   <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight text-foreground" style={{ letterSpacing: '-0.02em' }}>
