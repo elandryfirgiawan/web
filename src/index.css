@@ -197,3 +197,58 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   mix-blend-mode: soft-light;
 }
+@media print {
+  /* Sembunyikan elemen yang tidak perlu */
+  .no-print,
+  footer,
+  nav,
+  button,
+  img,
+  svg.logo,
+  .site-logo,
+  .navbar-logo,
+  .website-header,
+  .main-header {
+    display: none !important;
+  }
+
+  /* Area CV */
+  #cv-document-template {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Semua text dalam CV jadi hitam */
+  #cv-document-template,
+  #cv-document-template * {
+    color: black !important;
+    background: white !important;
+    border-color: #ddd !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Header CV tetap tampil */
+  .cv-header {
+    display: block !important;
+    margin-bottom: 24px !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    color: black !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+}

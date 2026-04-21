@@ -8,7 +8,6 @@ import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import CVTemplate from '@/components/CVTemplate.jsx';
 import { cvData } from '@/lib/cvData.js';
-import { generateCVPDF } from '@/lib/pdfGenerator.js';
 import { motion } from 'framer-motion';
 
 const CVPage = () => {
@@ -16,33 +15,25 @@ const CVPage = () => {
   const [isGenerating, setIsGenerating] = useState(false);
   const cvElementId = 'cv-document-template';
 
-  const handleDownloadPDF = async () => {
-    setIsGenerating(true);
+  const handleDownloadPDF = () => {
+  const pdfUrl = "/cv/elandry-firgiawan-cv.pdf";
+
+  const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "CV_Elandry_Firgiawan.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     toast({
-      title: "Generating PDF",
-      description: "Please wait while your document is being prepared...",
+      title: "Success",
+      description: "CV downloaded successfully.",
     });
-
-    const fileName = `CV_${cvData.personalInfo.name.replace(/\s+/g, '_')}.pdf`;
-    const success = await generateCVPDF(cvElementId, fileName);
-
-    if (success) {
-      toast({
-        title: "Success",
-        description: "CV downloaded successfully.",
-      });
-    } else {
-      toast({
-        title: "Error",
-        description: "Failed to generate PDF. Please try again.",
-        variant: "destructive"
-      });
-    }
-    setIsGenerating(false);
   };
 
   const handlePrint = () => {
-    window.print();
+    const pdfUrl = "/cv/elandry-firgiawan-cv.pdf";
+    window.open(pdfUrl, "_blank");
   };
 
   return (
@@ -60,11 +51,11 @@ const CVPage = () => {
           <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
             
             {/* Page Header & Controls */}
-            <motion.div
+            <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-12 gap-6 text-center md:text-left"
+              className="no-print flex flex-col md:flex-row justify-between items-center mb-8 md:mb-12 gap-6 text-center md:text-left"
             >
               <div>
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
@@ -86,11 +77,10 @@ const CVPage = () => {
                 </Button>
                 <Button 
                   onClick={handleDownloadPDF}
-                  disabled={isGenerating}
                   className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 min-h-[44px]"
                 >
                   <Download className="w-4 h-4 mr-2" />
-                  {isGenerating ? 'Generating...' : 'Download PDF'}
+                    Download PDF
                 </Button>
               </div>
             </motion.div>
@@ -107,8 +97,12 @@ const CVPage = () => {
                 for proper PDF generation and print appearance, while still looking 
                 good on screen.
               */}
-              <div className="w-full max-w-4xl min-w-[320px] md:min-w-[800px] p-2 sm:p-4 md:p-8 bg-muted/30 rounded-xl border border-border print:border-none print:bg-transparent print:p-0">
-                <CVTemplate data={cvData} id={cvElementId} />
+              <div className="w-full max-w-5xl rounded-xl border border-border overflow-hidden bg-white shadow-sm">
+                <iframe
+                  src="/cv/elandry-firgiawan-cv.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                  title="CV Preview"
+                  className="w-full h-[1200px]"
+                />
               </div>
             </motion.div>
 

@@ -19,7 +19,7 @@ export const cvData = {
         "Designed  HRIS database schema for BPJS services, supporting workforce data management for 8,000+ employees.",
         "Developed employee data models including tenant, department, division, BPJS status, and dependent classification.",
         "Built backend systems for Internship Portal and Legal Case Management using Laravel, Filament, Vue.js, and MySQL.",
-        ""
+        "tes"
       ]
     },
     {

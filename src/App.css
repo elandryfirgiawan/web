@@ -1,0 +1,40 @@
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background: white;
+  }
+
+  body * {
+    display: none !important;
+  }
+
+  #cv-document-template,
+  #cv-document-template * {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  #cv-document-template {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    color: black;
+    z-index: 9999;
+  }
+
+  .cv-header {
+    display: block !important;
+    margin-bottom: 24px;
+  }
+
+  header,
+  footer,
+  nav,
+  button {
+    display: none !important;
+  }
+}
