@@ -14,45 +14,29 @@ const ProjectsPage = () => {
 
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'Full-featured online store with payment processing, inventory management, order tracking, and admin dashboard. Built with modern technologies for optimal performance.',
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redis'],
-      category: 'Full Stack',
-      github: 'https://github.com',
-      demo: 'https://example.com'
-    },
-    {
-      title: 'IT Support Dashboard',
-      description: 'Comprehensive ticketing system for managing IT support requests with real-time updates, priority queuing, and automated notifications.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-      tags: ['Vue.js', 'Express', 'MongoDB', 'Socket.io'],
-      category: 'IT Support',
-      github: 'https://github.com'
-    },
-    {
       title: 'Portfolio Website Builder',
       description: 'Drag-and-drop website builder allowing users to create professional portfolios without coding. Features template library and custom domain support.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-      tags: ['React', 'TailwindCSS', 'Framer Motion'],
+      image: '/project/portofolio.png',
+      tags: ['React', 'TailwindCSS', 'Framer Motion', 'Varchel'],
       category: 'Frontend',
-      demo: 'https://example.com'
+      github: 'https://github.com/elandryfirgiawan/web',
+      demo: 'https://elandryfirgiawan-web.vercel.app/'
     },
     {
-      title: 'Network Monitoring Tool',
+      title: 'Dashboard Admin Portal Magang',
+      description: 'Drag-and-drop website builder allowing users to create professional portfolios without coding. Features template library and custom domain support.',
+      image: '/project/home-page-admin-portal-magang.jpeg',
+      tags: ['Laravel', 'Filament', 'MySQL', 'REST API'],
+      category: ['Backend', 'Frontend'],  
+      demo: 'https://services-magang.huabao-indonesia.com/'
+    },
+    {
+      title: 'A web-based application for classifying breast cancer',
       description: 'Real-time network monitoring solution with automated alerts, performance metrics, and detailed reporting for IT infrastructure management.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop',
-      tags: ['Python', 'Flask', 'Docker', 'Grafana'],
-      category: 'IT Support',
-      github: 'https://github.com'
-    },
-    {
-      title: 'REST API Gateway',
-      description: 'Scalable API gateway with authentication, rate limiting, request logging, and microservices orchestration. Handles 10k+ requests per second.',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
-      tags: ['Node.js', 'Express', 'Redis', 'JWT', 'Docker'],
-      category: 'Backend',
-      github: 'https://github.com'
+      image: '/project/klasifikasi-kanker.jpeg',
+      tags: ['Python', 'Machine Learning', 'Django'],
+      category: 'Full Stack',
+      github: 'https://github.com/elandryfirgiawan/Klasifikasi_Kanker_Payudara'
     },
     {
       title: 'Task Management App',
@@ -64,9 +48,11 @@ const ProjectsPage = () => {
     }
   ];
 
-  const filteredProjects = activeFilter === 'All' 
-    ? projects 
-    : projects.filter(project => project.category === activeFilter);
+  const filteredProjects = activeFilter === 'All'
+    ? projects
+    : projects.filter(project =>
+        project.category.includes(activeFilter)
+      );
 
   return (
     <>
