@@ -15,21 +15,21 @@ const AboutPage = () => {
       year: '2025 - Present',
       title: 'Full Stack Developer',
       company: 'Huabao Indonesia PT.Bousuo Taman Indusrial investment Group',
-      description: 'Leading development of enterprise web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.',
+      description: 'At PT Baoshuo Taman Industri Investment Group (Huabao Indonesia), I expanded my career as a Software Engineer by working on large-scale HRIS, legal management, and internship systems. This role strengthened my experience in building enterprise-level solutions, supporting digital transformation, and collaborating across departments to improve operational efficiency.',
       icon: Briefcase
     },
     {
-      year: '2024 - 2025',
-      title: 'Full Stack Developer & IT Support',
-      company: 'Digital Solutions Ltd.',
-      description: 'Built customer-facing web applications while providing comprehensive IT support. Reduced system downtime by 47% through proactive monitoring.',
+      year: 'Mei 2025 – Jul 2025',
+      title: 'Full Stack Developer',
+      company: 'SMP 2 Tanantovea School',
+      description: 'At SMP 2 Tanantovea, I gained experience in developing and managing educational web platforms remotely. I was responsible for ensuring the school’s website could support information delivery and digital presence effectively, while improving accessibility and user experience for students, teachers, and the public.',
       icon: Briefcase
     },
     {
-      year: '2022 - 2023',
-      title: 'IT Support Specialist',
-      company: 'Enterprise Systems Corp.',
-      description: 'Managed network infrastructure, troubleshot hardware/software issues, and automated routine tasks. Supported 200+ users across multiple locations.',
+      year: 'Sep 2024 – Oct 2024',
+      title: 'Fullstack Web Developer',
+      company: 'Badan Pemeriksa Keuangan Perwakilan Sulawesi Tengah (BPK SULTENG)',
+      description: 'During my internship at Badan Pemeriksa Keuangan (BPK) Perwakilan Sulawesi Tengah, I started my professional journey by developing a digital guest management system. This experience introduced me to real-world problem solving, where I helped transform manual administrative processes into a more efficient web-based service for public access.',
       icon: Wrench
     },
     {
@@ -158,7 +158,7 @@ const AboutPage = () => {
             >
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-foreground">Experience timeline</h2>
               <p className="text-sm md:text-base text-muted-foreground">
-                My professional journey from IT support to full stack development.
+                My professional journey from Software Engineer
               </p>
             </motion.div>
 

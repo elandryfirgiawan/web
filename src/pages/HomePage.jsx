@@ -43,7 +43,7 @@ const HomePage = () => {
         <Header />
         <ScrollToTopButton />
 
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-15">
           <div className="absolute inset-0 z-0">
             <img
               src="https://images.unsplash.com/photo-1636073320770-e9e886643dc9"
@@ -64,10 +64,10 @@ const HomePage = () => {
               <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20">
                 Available for new opportunities
               </Badge>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground" style={{ letterSpacing: '-0.02em' }}>
-                Full Stack Web Developer
+              <h1 className="text-3x1 sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-foreground" style={{ letterSpacing: '-0.02em' }}>
+                Software Engineer Fullstack Web Developer
                 <br />
-                <span className="gradient-text">& IT Support Specialist</span>
+                <span className="gradient-text">& IT Support</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
                 Building modern web applications and providing comprehensive IT solutions with 1 years of experience in development and technical support.

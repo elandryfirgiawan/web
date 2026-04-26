@@ -15,7 +15,7 @@ const ProjectsPage = () => {
   const projects = [
     {
       title: 'Portfolio Website Builder',
-      description: 'Drag-and-drop website builder allowing users to create professional portfolios without coding. Features template library and custom domain support.',
+      description: 'Developed a personal portfolio website to showcase professional experience, projects, technical skills, and achievements in web development. Built using React, Tailwind CSS, and Framer Motion with a modern responsive design and smooth animations, then deployed on Vercel for fast and reliable public access.',
       image: '/project/portofolio.png',
       tags: ['React', 'TailwindCSS', 'Framer Motion', 'Varchel'],
       category: 'Frontend',
@@ -24,18 +24,18 @@ const ProjectsPage = () => {
     },
     {
       title: 'Dashboard Admin Portal Magang',
-      description: 'Drag-and-drop website builder allowing users to create professional portfolios without coding. Features template library and custom domain support.',
-      image: '/project/home-page-admin-portal-magang.jpeg',
+      description: 'Developed a web-based Internship Admin Panel to manage internship participants, progress monitoring, onboarding, data export, and centralized dashboard statistics efficiently.',
+      image: '/project/portal-magang-admin.png',
       tags: ['Laravel', 'Filament', 'MySQL', 'REST API'],
-      category: ['Backend', 'Frontend'],  
+      category: ['Backend', 'Frontend', 'Full Stack'],  
       demo: 'https://services-magang.huabao-indonesia.com/'
     },
     {
       title: 'A web-based application for classifying breast cancer',
-      description: 'Real-time network monitoring solution with automated alerts, performance metrics, and detailed reporting for IT infrastructure management.',
+      description: 'A web-based application for classifying breast cancer (Invasive vs Non-Invasive) using DNA sequence data (FASTA format). This system applies Markov Chain feature extraction, PCA for dimensionality reduction, and SVM for classification.',
       image: '/project/klasifikasi-kanker.jpeg',
       tags: ['Python', 'Machine Learning', 'Django'],
-      category: 'Full Stack',
+      category: ['Full Stack', 'Backend'],
       github: 'https://github.com/elandryfirgiawan/Klasifikasi_Kanker_Payudara'
     },
     {
