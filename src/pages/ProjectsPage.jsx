@@ -39,12 +39,12 @@ const ProjectsPage = () => {
       github: 'https://github.com/elandryfirgiawan/Klasifikasi_Kanker_Payudara'
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management application with team workspaces, real-time updates, file attachments, and progress tracking.',
-      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=600&fit=crop',
-      tags: ['React', 'Firebase', 'Material-UI'],
-      category: 'Frontend',
-      demo: 'https://example.com'
+      title: 'RESTfull API Huabao Recruitment app mobile',
+      description: 'Built a RESTful API for a recruitment platform using Laravel, featuring secure authentication, email-based password reset, token validation, and structured JSON responses to support integration with mobile applications such as Flutter.',
+      image: '/project/api-huabao-recruitment.png',
+      tags: ['MySql', 'Laravel', 'RESTful API'],
+      category: 'Backend',
+      github: 'https://github.com/elandryfirgiawan/recruitment-app'
     }
   ];
 

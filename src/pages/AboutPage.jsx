@@ -36,7 +36,7 @@ const AboutPage = () => {
       year: '2021 - 2025',
       title: 'Bachelor of Mathematics',
       company: 'Tadulako University',
-      description: 'Graduated with honors. Focused on software engineering, database systems, and network administration.',
+      description: 'Graduated with honors in Mathematics from Tadulako University, with a strong foundation in analytical thinking and problem-solving. Transitioned into a career as a Web Developer, focusing on building efficient, scalable web applications using modern technologies.',
       icon: GraduationCap
     }
   ];
