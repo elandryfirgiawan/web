@@ -1,87 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Code, Database, Wrench, Package, Server, Globe } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import SkillCard from '@/components/SkillCard.jsx';
 import { motion } from 'framer-motion';
+import skillCategories from '@/data/skills';
 
 const SkillsPage = () => {
-  const skillCategories = [
-    {
-      title: 'Frontend Development',
-      icon: Code,
-      skills: [
-        { name: 'React', icon: Code, level: 92 },
-        { name: 'Vue.js', icon: Code, level: 85 },
-        { name: 'TypeScript', icon: Code, level: 88 },
-        { name: 'TailwindCSS', icon: Code, level: 90 },
-        { name: 'Framer Motion', icon: Code, level: 83 },
-        { name: 'Next.js', icon: Code, level: 87 }
-      ]
-    },
-    {
-      title: 'Backend Development',
-      icon: Server,
-      skills: [
-        { name: 'Node.js', icon: Server, level: 90 },
-        { name: 'Express', icon: Server, level: 88 },
-        { name: 'Python', icon: Server, level: 82 },
-        { name: 'REST APIs', icon: Server, level: 91 },
-        { name: 'GraphQL', icon: Server, level: 78 },
-        { name: 'Microservices', icon: Server, level: 80 }
-      ]
-    },
-    {
-      title: 'Database & Storage',
-      icon: Database,
-      skills: [
-        { name: 'PostgreSQL', icon: Database, level: 87 },
-        { name: 'MongoDB', icon: Database, level: 85 },
-        { name: 'Redis', icon: Database, level: 81 },
-        { name: 'Firebase', icon: Database, level: 83 },
-        { name: 'MySQL', icon: Database, level: 79 },
-        { name: 'Prisma ORM', icon: Database, level: 84 }
-      ]
-    },
-    {
-      title: 'DevOps & Tools',
-      icon: Package,
-      skills: [
-        { name: 'Git & GitHub', icon: Package, level: 93 },
-        { name: 'Docker', icon: Package, level: 86 },
-        { name: 'AWS', icon: Package, level: 82 },
-        { name: 'CI/CD', icon: Package, level: 80 },
-        { name: 'Nginx', icon: Package, level: 77 },
-        { name: 'Linux', icon: Package, level: 85 }
-      ]
-    },
-    {
-      title: 'IT Support',
-      icon: Wrench,
-      skills: [
-        { name: 'Windows Server', icon: Wrench, level: 88 },
-        { name: 'Network Administration', icon: Wrench, level: 86 },
-        { name: 'Active Directory', icon: Wrench, level: 84 },
-        { name: 'Troubleshooting', icon: Wrench, level: 91 },
-        { name: 'System Security', icon: Wrench, level: 83 },
-        { name: 'Help Desk', icon: Wrench, level: 89 }
-      ]
-    },
-    {
-      title: 'Web Technologies',
-      icon: Globe,
-      skills: [
-        { name: 'HTML5', icon: Globe, level: 95 },
-        { name: 'CSS3', icon: Globe, level: 93 },
-        { name: 'JavaScript', icon: Globe, level: 91 },
-        { name: 'Responsive Design', icon: Globe, level: 92 },
-        { name: 'Web Performance', icon: Globe, level: 87 },
-        { name: 'Accessibility', icon: Globe, level: 85 }
-      ]
-    }
-  ];
 
   return (
     <>

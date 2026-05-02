@@ -11,6 +11,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import { motion } from 'framer-motion';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -61,10 +62,16 @@ const ContactPage = () => {
       href: 'mailto:elandryfirgiawan@gmail.com'
     },
     {
+      icon: FaWhatsapp,
+      label: 'WhatsApp',
+      value: '082236945632',
+      href: 'https://wa.me/6282236945632?text=Hello%20I%20want%20to%20discuss%20a%20project',
+    },
+    {
       icon: MapPin,
       label: 'Location',
       value: 'Morowali, Indonesia',
-      href: 'https://maps.app.goo.gl/732bwShREqbdM2YH8' // Google Maps link to location
+      href: 'https://maps.app.goo.gl/732bwShREqbdM2YH8'
     }
   ];
 

@@ -9,22 +9,10 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import { motion } from 'framer-motion';
+import projects from '@/data/projects';
 
 const HomePage = () => {
-  const featuredProjects = [
-    {
-      title: 'E-commerce Platform',
-      description: 'Full-stack online store with payment integration, inventory management, and admin dashboard.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop'
-    },
-    {
-      title: 'IT Support Dashboard',
-      description: 'Comprehensive ticketing system for managing IT support requests with real-time updates.',
-      tags: ['Vue.js', 'Express', 'MongoDB', 'Socket.io'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop'
-    }
-  ];
+  const featuredProjects = projects.filter(p => p.category.includes('Full Stack')).slice(0, 2);
 
   const skills = [
     { icon: Code, label: 'Frontend Development', count: '8+ frameworks' },
