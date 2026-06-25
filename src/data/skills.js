@@ -15,16 +15,13 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiNextdotjs,
-  SiExpress,
   SiMysql,
   SiMongodb,
   SiPostgresql,
   SiFirebase,
-  SiPrisma,
-  SiRedis,
-  SiGraphql,
-  SiNginx,
+  SiDjango,
   SiLinux,
+  SiLaravel,
   SiPython,
 } from 'react-icons/si';
 const skillCategories = [
@@ -46,11 +43,10 @@ const skillCategories = [
     icon: FaServer,
     skills: [
       { name: 'Node.js', icon: FaNodeJs, level: 90 },
-      { name: 'Express', icon: SiExpress, level: 88 },
       { name: 'Python', icon: SiPython, level: 82 },
-      { name: 'REST APIs', icon: FaServer, level: 91 },
-      { name: 'GraphQL', icon: SiGraphql, level: 78 },
-      { name: 'Microservices', icon: FaServer, level: 80 }
+      { name: 'Django', icon: SiDjango, level: 89 },
+      { name: 'Laravel', icon: SiLaravel, level: 95 },
+      { name: 'RestFull API', icon: FaServer, level: 91 },
     ]
   },
 
@@ -60,10 +56,8 @@ const skillCategories = [
     skills: [
       { name: 'PostgreSQL', icon: SiPostgresql, level: 87 },
       { name: 'MongoDB', icon: SiMongodb, level: 85 },
-      { name: 'Redis', icon: SiRedis, level: 81 },
       { name: 'Firebase', icon: SiFirebase, level: 83 },
       { name: 'MySQL', icon: SiMysql, level: 79 },
-      { name: 'Prisma ORM', icon: SiPrisma, level: 84 }
     ]
   },
 
@@ -72,10 +66,8 @@ const skillCategories = [
     icon: FaDocker,
     skills: [
       { name: 'Git & GitHub', icon: FaGitAlt, level: 93 },
-      { name: 'Docker', icon: FaDocker, level: 86 },
-      { name: 'AWS', icon: FaServer, level: 82 },
+      { name: 'Hostinger VPS', icon: FaServer, level: 82 },
       { name: 'CI/CD', icon: FaTools, level: 80 },
-      { name: 'Nginx', icon: SiNginx, level: 77 },
       { name: 'Linux', icon: SiLinux, level: 85 }
     ]
   },

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { ArrowRight, ChevronDown, Code, Wrench, Zap } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,7 +17,7 @@ const HomePage = () => {
 
   const skills = [
     { icon: Code, label: 'Frontend Development', count: '8+ frameworks' },
-    { icon: Wrench, label: 'IT Support', count: '1+ years' },
+    { icon: Wrench, label: 'IT Support', count: '1 years' },
     { icon: Zap, label: 'Backend Development', count: '12+ technologies' }
   ];
 
@@ -61,17 +62,43 @@ const HomePage = () => {
                 Building modern web applications and providing comprehensive IT solutions with 1 years of experience in development and technical support.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+
                 <Link to="/projects" className="w-full sm:w-auto">
-                  <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 group min-h-[44px]">
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 group min-h-[44px]"
+                  >
                     Explore my work
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
                   </Button>
                 </Link>
+
+                <a
+                  href="https://github.com/elandryfirgiawan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
+                >
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto border-border bg-card text-foreground hover:border-primary/50 hover:bg-primary/10 min-h-[44px] group"
+                  >
+                    <FaGithub className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+                    GitHub
+                  </Button>
+                </a>
+
                 <Link to="/contact" className="w-full sm:w-auto">
-                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-border bg-card text-foreground hover:border-primary/50 hover:bg-primary/10 min-h-[44px]">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto border-border bg-card text-foreground hover:border-primary/50 hover:bg-primary/10 min-h-[44px]"
+                  >
                     Get in touch
                   </Button>
                 </Link>
+
               </div>
             </motion.div>
 

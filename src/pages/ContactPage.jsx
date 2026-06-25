@@ -70,7 +70,7 @@ const ContactPage = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Morowali, Indonesia',
+      value: 'Makassar, Indonesia',
       href: 'https://maps.app.goo.gl/732bwShREqbdM2YH8'
     }
   ];

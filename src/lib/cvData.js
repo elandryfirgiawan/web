@@ -53,15 +53,15 @@ export const cvData = {
   ],
   skills: {
     "Frontend": ["React", "Vue.js", "TypeScript", "TailwindCSS", "Next.js"],
-    "Backend": ["Node.js", "Express", "Python", "REST APIs", "GraphQL"],
-    "Database": ["PostgreSQL", "MongoDB", "Redis", "Prisma ORM"],
-    "DevOps & Tools": ["Git", "Docker", "AWS", "CI/CD", "Linux"],
+    "Backend": ["Node.js", "Express", "Python", "REST APIs", "Laravel", "VPS", "CyberPanel"],
+    "Database": ["PostgreSQL", "MongoDB", "Mysql"],
+    "DevOps & Tools": ["Git", "CI/CD", "Linux"],
     "IT Support": ["Windows Server", "Active Directory", "Networking", "Troubleshooting"]
   },
   certifications: [
-    "Dicoding Certified - Professional (2022)",
-    "Myskils (2018)",
-    "CompTIA A+ (2017)"
+    "Dicoding Certified",
+    "Myskils ",
+    
   ],
   languages: [
     { language: "English", proficiency: "Native" },

@@ -7,15 +7,15 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ScrollToTopButton from '@/components/ScrollToTopButton.jsx';
 import { motion } from 'framer-motion';
-import fotoCV from "../assets/image/fotocv.jpeg";
+import fotoCV from "../assets/image/profile.jpeg";
 
 const AboutPage = () => {
   const timeline = [
     {
-      year: '2025 - Present',
-      title: 'Full Stack Developer',
+      year: 'Nov 2025 - Mei 2026',
+      title: 'Backend Developer',
       company: 'Huabao Indonesia PT.Bousuo Taman Indusrial investment Group',
-      description: 'At PT Baoshuo Taman Industri Investment Group (Huabao Indonesia), I expanded my career as a Software Engineer by working on large-scale HRIS, legal management, and internship systems. This role strengthened my experience in building enterprise-level solutions, supporting digital transformation, and collaborating across departments to improve operational efficiency.',
+      description: 'At PT Baoshuo Taman Industri Investment Group (Huabao Indonesia), I expanded my career as a Software Engineer by working on large-scale Mobile Recruitment, HRIS, legal management, and internship systems. This role strengthened my experience in building enterprise-level solutions, supporting digital transformation, and collaborating across departments to improve operational efficiency.',
       icon: Briefcase
     },
     {
@@ -44,18 +44,13 @@ const AboutPage = () => {
   const achievements = [
     {
       icon: Award,
-      title: 'AWS Certified Solutions Architect',
+      title: 'IT Support Huabao',
       description: 'Professional level certification'
     },
     {
       icon: Target,
-      title: '15+ Production Applications',
+      title: '7+ Production Applications',
       description: 'Successfully deployed and maintained'
-    },
-    {
-      icon: Award,
-      title: 'CompTIA A+ & Network+',
-      description: 'IT support certifications'
     }
   ];
 

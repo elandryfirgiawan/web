@@ -32,7 +32,7 @@ const CVPage = () => {
   };
 
   const handlePrint = () => {
-    const pdfUrl = "/cv/elandry-firgiawan-cv.pdf";
+    const pdfUrl = "/cv/elandryfirgiawan-update.pdf";
     window.open(pdfUrl, "_blank");
   };
 
