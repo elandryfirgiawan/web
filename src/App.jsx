@@ -9,6 +9,7 @@ import SkillsPage from './pages/SkillsPage';
 import CVPage from './pages/CVPage';
 import ContactPage from './pages/ContactPage';
 import { ThemeProvider } from '@/context/ThemeContext.jsx';
+import CertificatesPage from './pages/CertificatesPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/certificates" element={<CertificatesPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/cv" element={<CVPage />} />

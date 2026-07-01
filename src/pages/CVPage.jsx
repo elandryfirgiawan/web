@@ -16,7 +16,7 @@ const CVPage = () => {
   const cvElementId = 'cv-document-template';
 
   const handleDownloadPDF = () => {
-  const pdfUrl = "/cv/elandry-firgiawan-cv.pdf";
+  const pdfUrl = "/cv/cv-elandry-firgiawan.pdf";
 
   const link = document.createElement("a");
     link.href = pdfUrl;
@@ -32,7 +32,7 @@ const CVPage = () => {
   };
 
   const handlePrint = () => {
-    const pdfUrl = "/cv/elandryfirgiawan-update.pdf";
+    const pdfUrl = "/cv/cv-elandry-firgiawan.pdf";
     window.open(pdfUrl, "_blank");
   };
 
